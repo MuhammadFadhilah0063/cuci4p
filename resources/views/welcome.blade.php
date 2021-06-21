@@ -93,6 +93,7 @@
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://vapor.laravel.com">Vapor</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="http://localhost/cuci4p/public/biaya">Biaya</a>
                 </div>
             </div>
         </div>
