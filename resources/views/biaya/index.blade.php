@@ -7,7 +7,7 @@
             <div class="card">
                 <div class="card-header">
                     JENIS BIAYA
-                    <a href="http://localhost/cuci4p/public/biaya/create" class="btn btn-md btn-success float-right">Tambah Data</a>
+                    <a href="{{ route('tambah.biaya') }}" class="btn btn-md btn-success float-right">Tambah Data</a>
                 </div>
 
                 <div class="card-body">
@@ -26,8 +26,8 @@
                                 <td>{{ $b->jenis }}</td>
                                 <td>{{ $b->biaya }}</td>
                                 <td>
-                                    <a href="#" class="btn btn-md btn-primary">Edit</a>
-                                    <a href="#" class="btn btn-md btn-danger">Hapus</a>
+                                    <a href="{{ route('edit.biaya', $b->id_biaya) }}" class="btn btn-md btn-primary">Edit</a>
+                                    <a href="{{ route('hapus.biaya', $b->id_biaya) }}" class="btn btn-md btn-danger">Hapus</a>
                                 </td>
                             </tr>
                             @endforeach

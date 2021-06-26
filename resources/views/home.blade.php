@@ -15,6 +15,7 @@
                     @endif
 
                     You are logged in!
+                    <a href="http://localhost/cuci4p/public/biaya">Biaya</a>
                 </div>
             </div>
         </div>

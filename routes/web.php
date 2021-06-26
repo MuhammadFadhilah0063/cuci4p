@@ -21,5 +21,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 // ini halaman biaya
 
-Route::get('/biaya', 'BiayaController@index');
-Route::get('/biaya/create', 'BiayaController@create');
+Route::get('/biaya', 'BiayaController@index')->name('biaya');
+Route::get('/tambah-biaya', 'BiayaController@create')->name('tambah.biaya');
+Route::post('/simpan-biaya', 'BiayaController@store')->name('simpan.biaya');
+Route::get('/edit-biaya/{id}', 'BiayaController@edit')->name('edit.biaya');
+Route::post('/update-biaya/{id}', 'BiayaController@update')->name('update.biaya');
+Route::get('/hapus-biaya/{id}', 'BiayaController@destroy')->name('hapus.biaya');
